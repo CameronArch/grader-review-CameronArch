@@ -1,4 +1,5 @@
-CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
+WINCPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
+CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
 
 rm -rf student-submission
 rm -rf grading-area
@@ -39,7 +40,7 @@ exit 1
 fi
 
 
-java -cp $CPATH org.junit.runner.JUnitCore TestListExamplesS > results.txt
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > results.txt
 
 grep -i "OK" results.txt > success.txt
 grep -i "Failure" results.txt > failure.txt
