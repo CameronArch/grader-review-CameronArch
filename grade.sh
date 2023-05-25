@@ -48,5 +48,7 @@ grep -i "Failure" results.txt > failure.txt
 
 echo `cat failure.txt`
 
+# all good
+
 
 echo `cat success.txt`
